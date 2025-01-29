@@ -35,11 +35,82 @@
 
 // Q10. Give an example of a function with default parameters.
 // A:
+function greet(name = "Guest") {
+  return `Hello, ${name}!`;
+}
+console.log(greet()); // Hello, Guest!
 
-// javascript
-// Copy
-// Edit
-// function greet(name = "Guest") {
-//   return `Hello, ${name}!`;
-// }
-// console.log(greet()); // Hello, Guest!
+// 4. Template Strings:
+// Q11. What are template literals in ES6?
+// A: Template literals are strings enclosed in backticks (``) that allow embedded expressions using ${expression}.
+
+// Q12. How are template literals different from regular strings?
+// A: Template literals support multi-line strings and string interpolation.
+
+// Q13. Write an example of a dynamic string using template literals.
+// A:
+
+
+const name = "Alice";
+console.log(`Hello, ${name}!`);
+
+
+// Q14. How do you write multi-line strings with template literals?
+// A:
+
+const text = `This is a
+multi-line string.`;
+console.log(text);
+
+// 5. Arrow Functions:
+// Q15. What are arrow functions?
+// A: Arrow functions are a shorthand syntax for writing functions, introduced in ES6.
+
+// Q16. How do arrow functions handle the this keyword?
+// A: Arrow functions do not have their own this; they inherit this from the enclosing scope.
+
+// Q17. Write an example of an arrow function with one parameter.
+// A:
+const square = x => x * x;
+console.log(square(4)); // 16
+
+// Q18. Can arrow functions be used as methods in an object? Why or why not?
+// A: No, because arrow functions do not have their own this, making them unsuitable as methods.
+
+// 6. Spread Operator:
+// Q19. What is the spread operator in ES6?
+// A: The spread operator (...) allows you to expand arrays or objects into individual elements.
+
+// Q20. How can you use the spread operator to copy an array?
+// A:
+
+const arr = [1, 2, 3];
+const copy = [...arr];
+// Q21. How do you merge two arrays with the spread operator?
+// A:
+
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+const merged = [...arr1, ...arr2];
+
+// Q22. Write an example of finding the maximum value in an array using the spread operator.
+// A:
+
+const nums = [10, 20, 30];
+console.log(Math.max(...nums)); // 30
+
+// 7. Destructuring:
+// Q23. What is array destructuring?
+// A: Array destructuring allows you to unpack values from arrays into variables.
+// Example:
+
+const [a, b] = [1, 2];
+// Q24. What is object destructuring?
+// A: Object destructuring allows you to extract properties from an object into variables.
+// Example:
+//const {name, age} = {name: "John", age: 25};
+
+// Q25. How do you assign a default value in destructuring?
+// A:
+// const [a = 10] = [];
+// console.log(a); // 10
