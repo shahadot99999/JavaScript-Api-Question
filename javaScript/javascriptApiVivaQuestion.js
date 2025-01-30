@@ -114,3 +114,50 @@ const [a, b] = [1, 2];
 // A:
 // const [a = 10] = [];
 // console.log(a); // 10
+
+
+//  Object Methods:
+// Q26. What does Object.keys() do?
+// A: It returns an array of an object’s keys.
+// Example:
+
+
+// Object.keys({a: 1, b: 2}); // ['a', 'b']
+// Q27. What does Object.values() do?
+// A: It returns an array of an object’s values.
+// Example:
+
+
+// Object.values({a: 1, b: 2}); // [1, 2]
+// Q28. What does Object.entries() return?
+// A: It returns an array of key-value pairs.
+// Example:
+
+
+// Object.entries({a: 1, b: 2}); // [['a', 1], ['b', 2]]
+// Q29. How does Object.freeze() work?
+// A: It prevents modifications to the properties or structure of an object.
+
+// Q30. What is the difference between Object.seal() and Object.freeze()?
+// A:
+
+// Object.seal(): Prevents adding/removing properties but allows modifying existing ones.
+// Object.freeze(): Prevents adding, removing, or modifying properties.
+// 9. Loops:
+// Q31. What is the difference between for...of and for...in?
+// A:
+
+// for...of: Iterates over values of an iterable (e.g., array).
+// for...in: Iterates over keys or properties of an object.
+// Q32. Give an example of for...of.
+// A:
+
+
+// for (let value of [1, 2, 3]) console.log(value);
+// Q33. Give an example of for...in.
+// A:
+
+
+// const obj = {a: 1, b: 2};
+// for (let key in obj) console.log(key);
+
