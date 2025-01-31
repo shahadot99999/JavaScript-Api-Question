@@ -161,3 +161,74 @@ const [a, b] = [1, 2];
 // const obj = {a: 1, b: 2};
 // for (let key in obj) console.log(key);
 
+// Q34. What happens if you declare a var variable twice in the same scope?
+// A: It does not throw an error, but the second declaration overwrites the first one.
+
+
+// var x = 10;
+// var x = 20;
+// console.log(x); // 20
+// Q35. Can let variables be hoisted?
+// A: Yes, they are hoisted but are not accessible until initialized, due to the temporal dead zone.
+
+// Q36. What will happen if you use a const variable without initializing it?
+// A: It throws a syntax error because const variables must be initialized when declared.
+
+// 11. Function Default Parameters:
+// Q37. What is the difference between undefined and a missing argument in default parameters?
+// A: Both trigger the default parameter value.
+
+
+// function test(a = 5) { console.log(a); }
+// test(); // 5
+// test(undefined); // 5
+// Q38. Can you use expressions as default parameters?
+// A: Yes, you can use expressions.
+
+
+// function add(a, b = a * 2) { return a + b; }
+// console.log(add(5)); // 15
+// Q39. What happens if you pass null to a parameter with a default value?
+// A: null does not trigger the default; it is used as the argument’s value.
+
+
+// function greet(name = "Guest") { console.log(name); }
+// greet(null); // null
+// 12. Template Strings:
+// Q40. What happens if you use template literals without any dynamic content?
+// A: It behaves like a regular string.
+
+
+// const message = `Hello World`;
+// console.log(message); // Hello World
+// Q41. Can template literals be nested?
+// A: Yes, template literals can include other template literals.
+
+
+// const name = "Alice";
+// const message = `Hello, ${`dear ${name}`}`;
+// console.log(message); // Hello, dear Alice
+// Q42. How are template literals useful for HTML strings?
+// A: They make it easy to create multi-line and dynamic HTML content.
+
+
+// const html = `<div>
+//   <h1>Hello</h1>
+// </div>`;
+// 13. Arrow Functions:
+// Q43. Can arrow functions have this binding?
+// A: No, they inherit this from the surrounding scope.
+
+// Q44. How can you return an object from an arrow function?
+// A: Wrap the object in parentheses to avoid confusion with function blocks.
+
+
+// const getObject = () => ({ a: 1, b: 2 });
+// Q45. How do arrow functions handle arguments?
+// A: They do not have their own arguments object; you must use rest parameters.
+
+
+// const sum = (...args) => args.reduce((a, b) => a + b);
+// Q46. Can you use an arrow function as a constructor? Why or why not?
+// A: No, arrow functions cannot be used as constructors because they lack the this binding required.
+
