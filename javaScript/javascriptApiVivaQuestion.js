@@ -232,3 +232,31 @@ const [a, b] = [1, 2];
 // Q46. Can you use an arrow function as a constructor? Why or why not?
 // A: No, arrow functions cannot be used as constructors because they lack the this binding required.
 
+// Functions & Objects
+// Q: What are first-class functions in JavaScript?
+// A: Functions in JavaScript can be assigned to variables, passed as arguments, and returned from other functions.
+
+// Q: What is the difference between function declaration and function expression?
+// A:
+
+// Declaration: function add(a, b) { return a + b; }
+// Expression: const add = function(a, b) { return a + b; };
+// Q: What is a callback function?
+// A: A function passed as an argument to another function and executed later.
+// Example:
+
+
+// function greet(name, callback) {
+//     console.log("Hello " + name);
+//     callback();
+// }
+// greet("Alice", () => console.log("Callback executed"));
+// Q: What is an arrow function?
+// A: A shorter syntax for functions introduced in ES6.
+// Example: const add = (a, b) => a + b;
+
+// Q: What is the difference between a shallow copy and a deep copy?
+// A:
+
+// Shallow Copy: Copies references, changes in one affect the original.
+// Deep Copy: Creates a completely new copy.
