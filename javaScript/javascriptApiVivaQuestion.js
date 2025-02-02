@@ -260,3 +260,26 @@ const [a, b] = [1, 2];
 
 // Shallow Copy: Copies references, changes in one affect the original.
 // Deep Copy: Creates a completely new copy.
+
+
+// Advanced Promises and Async/Await:
+// Q17. What is the purpose of Promise.all()?
+// A: It runs multiple promises concurrently and resolves with all results or rejects if any fail.
+
+// Q18. How does async/await handle errors?
+// A: Errors in await can be caught using try...catch.
+
+// Q19. Can you mix then and async/await?
+// A: Yes, but it’s not recommended as it can lead to complex code.
+
+// 10. Advanced Classes:
+// Q20. Can ES6 classes have private properties?
+// A: Not directly, but you can use closures or # syntax for private fields.
+
+
+// class Example {
+//   #privateField = 10;
+//   getPrivate() {
+//     return this.#privateField;
+//   }
+// }
