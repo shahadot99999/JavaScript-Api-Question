@@ -283,3 +283,75 @@ const [a, b] = [1, 2];
 //     return this.#privateField;
 //   }
 // }
+
+
+//  Advanced Generators:
+// Q26. What are generators?
+// A: Generators are functions that can pause and resume execution, denoted by function*.
+
+// Q27. How do you use yield in a generator?
+// A:
+
+
+// function* generateNumbers() {
+//   yield 1;
+//   yield 2;
+//   yield 3;
+// }
+// Q28. What is the difference between yield and return in a generator?
+// A: yield pauses execution; return ends the generator and optionally returns a value.
+
+// 14. Advanced Sets and Maps:
+// Q29. How are Set and WeakSet different?
+// A: Set stores values strongly, while WeakSet only stores objects and allows garbage collection.
+
+// Q30. How do you check for key existence in a Map?
+// A: Use the has method.
+
+
+// map.has("key");
+// 15. Advanced ES6 Modules:
+// Q31. Can you rename imports and exports?
+// A: Yes, using as.
+
+
+// import { name as newName } from "./module";
+// Q32. What happens if you import the same module multiple times?
+// A: The module is only executed once, and cached results are reused.
+
+// 16. Advanced Rest/Spread Use Cases:
+// Q33. How do you remove the first element of an array using destructuring?
+// A:
+
+
+// const [, ...rest] = [1, 2, 3];
+// console.log(rest); // [2, 3]
+// Q34. Can you clone nested objects with the spread operator?
+// A: Not directly; it only performs a shallow copy.
+
+// 17. Miscellaneous:
+// Q35. Can you extend built-in objects in ES6?
+// A: Yes, using class inheritance.
+
+
+// class CustomArray extends Array {}
+// Q36. What is Reflect in ES6?
+// A: It provides methods to perform object operations similar to Object.
+
+// Q37. What is Proxy in ES6?
+// A: It allows intercepting and customizing operations on objects.
+
+// Q38. How do you check if a number is finite in ES6?
+// A: Use Number.isFinite().
+
+// Q39. Can you make an object iterable?
+// A: Yes, by implementing the [Symbol.iterator] method.
+
+// Q40. How do tagged template literals work?
+// A: They process template literals using a function.
+
+
+// function tag(strings, ...values) {
+//   return strings.join(", ") + values.join(", ");
+// }
+// console.log(tag`Hello ${"World"}!`); // Hello , World, !
